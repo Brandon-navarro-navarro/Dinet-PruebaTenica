@@ -1,6 +1,6 @@
 # Dinet Prueba Tecnica
 
-##Consideraciones
+## Consideraciones
 1. El proyecto back esta desarrollado en Visual Studio 2022.
 2. El proyecto front esta desarrollado en Visual Code por lo cual no sera visible al abrir la solucion de Visual Studio, se debe abrir en visual code y seguir las instrucciones indicadas lineas abajo.
 
