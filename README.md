@@ -5,7 +5,7 @@
 2. El proyecto front esta desarrollado en Visual Code por lo cual no sera visible al abrir la solucion de Visual Studio, se debe abrir en visual code y seguir las instrucciones indicadas lineas abajo.
 
 
-Estructura
+## Estructura
 ## Back
 
 En la carpeta Dinet.Api se encuentra el proyecto Api que se realizo en .net 8 el cual usa el ORM Entity Framwork para la conexion a la base de datos SqlServer Microsoft.
