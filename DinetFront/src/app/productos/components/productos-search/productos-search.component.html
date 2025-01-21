@@ -1,0 +1,35 @@
+<div class="card card-search my-2">
+  <div class="card-body">
+    <div class="row g-3 justify-content-center">
+      <div class="col-auto">
+        <label for="txtCodigo" class="col-form-label">Código:</label>
+      </div>
+      <div class="col-auto">
+        <input
+          type="number"
+          id="txtCodigo"
+          #txtCodigo
+          class="form-control"
+          placeholder="Código"
+
+        />
+      </div>
+        <div class="col-auto">
+        <label for="txtNombre" class="col-form-label">Nombre</label>
+      </div>
+      <div class="col-auto">
+        <input
+          type="text"
+          id="txtNombre"
+          #txtNombre
+          class="form-control"
+          placeholder="Nombre"
+
+        />
+      </div>
+       <div class="col-auto">
+        <button (click)="consultar()" class="btn btn-primary button-search"> Buscar</button>
+      </div>
+    </div>
+  </div>
+</div>

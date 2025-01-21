@@ -1,0 +1,42 @@
+<button type="button" class="btn btn-info button-new" data-bs-toggle="modal" data-bs-target="#exampleModal"> + Nuevo producto</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" data-bs-backdrop="static"  aria-hidden="true" #exampleModal>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Nuevo Producto</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Formulario o contenido del modal -->
+        <form #form="ngForm" >
+          <div class="mb-3">
+            <label for="nombre" class="form-label">Nombre</label>
+            <input type="text" id="nombre" class="form-control" [(ngModel)]="producto.nombre" name="nombre" required>
+            <div *ngIf="invalidNombre" class="text-danger">
+              El nombre es obligatorio.
+            </div>
+          </div>
+            <div class="mb-3">
+            <label for="precio" class="form-label">Precio</label>
+            <input type="number" id="precio" class="form-control" [(ngModel)]="producto.precio" name="precio" step="0.01"  required>
+             <div *ngIf="invalidPrecio" class="text-danger">
+              El precio es obligatorio.
+            </div>
+          </div>
+            <div class="mb-3">
+            <label for="fechaCreacion" class="form-label">Fecha Creacion</label>
+            <input type="date" id="fechaCreacion" class="form-control" [(ngModel)]="producto.fechaCreacion" name="fechaCreacion" required>
+             <div *ngIf="invalidFechaCreacion" class="text-danger">
+              El fechaCreacion es obligatorio.
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" (click)="guardar()" class="btn btn-primary" >Guardar</button>
+      </div>
+    </div>
+  </div>
+</div>

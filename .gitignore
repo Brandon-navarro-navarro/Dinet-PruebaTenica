@@ -1,0 +1,57 @@
+# See https://docs.github.com/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+
+/Dinet.Api/bin
+/Dinet.Api/obj
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+.vs/
+
+# Paket dependency manager
+.paket/paket.exe
+paket-files/
+
+# Compiled output
+/DinetFront/dist
+/DinetFront/tmp
+/DinetFront/out-tsc
+/DinetFront/bazel-out
+
+# Node
+/DinetFront/node_modules
+/DinetFront/npm-debug.log
+/DinetFront/yarn-error.log
+
+# IDEs and editors
+/DinetFront/.idea/
+/DinetFront/.project
+/DinetFront/.classpath
+/DinetFront/.c9/
+/DinetFront/*.launch
+/DinetFront/.settings/
+/DinetFront/*.sublime-workspace
+
+# Visual Studio Code
+/DinetFront/.vscode/*
+/DinetFront/!.vscode/settings.json
+/DinetFront/!.vscode/tasks.json
+/DinetFront/!.vscode/launch.json
+/DinetFront/!.vscode/extensions.json
+/DinetFront/.history/*
+
+# Miscellaneous
+/DinetFront/.angular/cache
+/DinetFront/.sass-cache/
+/DinetFront/connect.lock
+/DinetFront/coverage
+/DinetFront/libpeerconnection.log
+/DinetFront/testem.log
+/DinetFront/typings
+
+# System files
+/DinetFront/.DS_Store
+/DinetFront/Thumbs.db

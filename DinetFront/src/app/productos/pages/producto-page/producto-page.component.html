@@ -1,0 +1,14 @@
+<div class="container mt-2">
+  <div class="d-flex justify-content-between">
+    <h2>Listado de Productos</h2>
+    <productos-new (onList)="OnSearch()"></productos-new>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <hr />
+      <productos-search (onList)="consultarProductos($event)"></productos-search>
+      <productos-tabla [productos]="productos"></productos-tabla>
+    </div>
+  </div>
+</div>

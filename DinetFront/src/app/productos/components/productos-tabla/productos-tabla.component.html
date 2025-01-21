@@ -1,0 +1,24 @@
+<div *ngIf="productos.length === 0; else table" class="alert alert-warning text-center">
+  No hay productos que mostrar
+</div>
+
+<ng-template #table>
+  <table class="table  table-hover table-striped">
+    <thead class="table-dark">
+      <tr>
+        <th>Código</th>
+        <th>Nombre</th>
+        <th>Precio Unitario</th>
+        <th>Fecha de Creacion</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productos, let i = index">
+        <td>{{producto.id}}</td>
+        <td>{{producto.nombre | titlecase}}</td>
+        <td>{{producto.precio | currency:'PEN':"symbol-narrow":"1.2-2" }}</td>
+        <td>{{producto.fechaCreacion | date:"dd/MM/YYYY"}}</td>
+      </tr>
+    </tbody>
+  </table>
+</ng-template>
